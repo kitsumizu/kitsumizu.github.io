@@ -1,0 +1,8 @@
+p, h1 {
+    color: black;
+}
+
+body {
+    background-image: url("../images/seaweed.jpg");
+    text-align: center;
+}
