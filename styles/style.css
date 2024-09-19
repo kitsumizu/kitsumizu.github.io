@@ -1,6 +1,9 @@
-p, h1 {
-    color: black;
-    text-shadow: 0 0 20px lightskyblue, 0 0 1em lightskyblue;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+    --background-color: #18181b;
+    --background-wave-color: #1c1c21;
+    --link-color: #fad6b8;
 }
 
 html {
@@ -8,14 +11,40 @@ html {
 }
 
 body {
-    background-image: url("../images/kelp.jpg");
+    background-color: var(--background-color);
     background-size: cover;
     background-repeat: no-repeat;
     
+    color: white;
+
+    font-family: "Open Sans";
     text-align: center;
+
+    margin-top: 3em;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.background-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: -1;
+}
+
+.background-wave path {
+    fill: var(--background-wave-color);
+}
+
+.trunic-header img {
+    height: 64px;
+}
+
+.trunic-header {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+a, a:visited {
+    color: var(--link-color);
 }
